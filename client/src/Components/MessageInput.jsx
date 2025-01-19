@@ -50,7 +50,7 @@ const MessageInput = () => {
   };
   
   return (
-    <div className=" w-full h-[10%] flex justify-between border-t-slate-800 border-t">
+    <div className=" w-full h-[8%] flex justify-between border-t-slate-800 border-t">
       <input
         type="text"
         name=""
