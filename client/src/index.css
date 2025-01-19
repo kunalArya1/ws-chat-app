@@ -27,7 +27,7 @@ body {
 
 /* In your global CSS file */
 .scrollable {
-  scrollbar-width: thin;
+  scrollbar-width: none;
   scrollbar-color: #4a5568 #2d3748; /* Change colors for the scrollbar */
 }
 

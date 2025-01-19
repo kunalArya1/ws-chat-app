@@ -16,7 +16,7 @@ const MessageSection = () => {
   return (
     <div
       ref={messageContainerRef}
-      className="w-full h-[80%] text-white overflow-y-auto"
+      className="w-full h-[80%] text-white scrollable overflow-y-auto"
     >
       {message.map((element, index) => {
         // Check if the message starts with "You:" to determine sender
@@ -32,7 +32,7 @@ const MessageSection = () => {
             <div
               className={`${
                 isUserMessage
-                  ? "bg-slate-900 border-slate-700 border text-white"
+                  ? "bg-slate-900 border-green-700 border-2 text-white"
                   : "bg-slate-900 border-slate-700 border text-white"
               } m-2 p-2 px-4 max-w-[60%] rounded-2xl break-words`}
             >
