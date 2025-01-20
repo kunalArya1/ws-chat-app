@@ -3,8 +3,12 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { MessageContextProvider } from "./context/MessageContext.jsx";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/routes.jsx";
 createRoot(document.getElementById("root")).render(
   <MessageContextProvider>
-    <App />
+    <RouterProvider router={router}>
+      <App />
+    </RouterProvider>
   </MessageContextProvider>
 );
